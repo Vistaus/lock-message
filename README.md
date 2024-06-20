@@ -2,7 +2,7 @@
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/lock-message.pybodensee)
 
-`Lock Message` is a fork of unmaintained `Circle Messsage` app on Ubunut Touch Open Store. `Lock Message` is an attempt to revive the app. 
+`Lock Message` is a fork of unmaintained `Circle Messsage` app on Ubunut Touch Open Store. `Lock Message` is an attempt to revive the app. See `git log` of the GitHub repository to get an idea of all the changes.
 
 This app will *Add your message to the lock screen*. You can add any message that can be useful to display on a locked screen. Here are some of the use-cases.
 
