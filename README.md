@@ -30,7 +30,8 @@ Some use cases where this can be useful.
 This app is a fork of `Circle Message` created by Michał Prędotka and is available under BSD License. We have kept that old license intact. 
 
 
-Copyright (C) 2024  Faisal Shahzad
+Copyright (C) 2024-   Faisal Shahzad
+
 Copyright (C) 2017-2024  Michał Prędotka
 
 Licensed under the BSD license. See LICENSE file for more details or drop us an email if you have any questions about this.
