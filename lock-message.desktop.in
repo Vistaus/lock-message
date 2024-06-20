@@ -1,0 +1,7 @@
+[Desktop Entry]
+_Name=Lock Message
+Exec=qmlscene %U qml/Main.qml
+Icon=assets/lock-message.png
+Terminal=false
+Type=Application
+X-Lomiri-Touch=true

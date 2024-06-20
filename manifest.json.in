@@ -1,7 +1,7 @@
 {
     "name": "lock-message.pybodensee",
     "description": "Add your message to the lockscreen",
-    "architecture": "all",
+    "architecture": "@CLICK_ARCH@",
     "title": "Lock Message",
     "hooks": {
         "lock-message": {
@@ -11,5 +11,5 @@
     },
     "version": "0.1.0",
     "maintainer": "Faisal Shahzad <pybodensee@gmail.com>",
-    "framework" : "ubuntu-sdk-20.04.1"
+    "framework" : "@CLICK_FRAMEWORK@"
 }
