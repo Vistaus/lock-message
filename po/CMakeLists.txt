@@ -2,10 +2,10 @@ include(FindGettext)
 find_program(GETTEXT_XGETTEXT_EXECUTABLE xgettext)
 
 set(DOMAIN ${FULL_PROJECT_NAME})
-set(POT_FILE ${DOMAIN}.pot)
+set(POT_FILE template.pot)
 file(GLOB PO_FILES *.po)
 
-# Creates the .pot file containing the translations template
+# Creates the template.pot file containing the translations template
 add_custom_target(${POT_FILE} ALL
     COMMENT "Generating translation template"
     COMMAND ${INTLTOOL_EXTRACT} --update --type=gettext/ini
