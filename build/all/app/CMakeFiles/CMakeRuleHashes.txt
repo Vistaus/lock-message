@@ -1,0 +1,21 @@
+# Hashes of file build rules.
+b632ce6161861098ef9ef7d98fa1ed4a CMakeFiles/lock-message.desktop
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_1
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_2
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_3
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_4
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_5
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_6
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_7
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_8
+be7b9c4a4d94ae9b6905c05d0229cb22 po/CMakeFiles/pofiles_9
+87c224a472e3f1afdaeb4b9973f6f52f po/CMakeFiles/template.pot
+8bd82f3e0e6689f024517b89f9209c68 po/cs.gmo
+de1963f6550d659d90472bf57097686f po/de.gmo
+83a0c43819f88af7b12135ef44abd4c2 po/el.gmo
+801dd5cfad2a6e5e556d72b747800933 po/es.gmo
+b3eb3ff32bac0c79b954ca38b331bb4a po/fr.gmo
+7e3495dd0a6dcf392f7c0d4fa7307d1e po/hu.gmo
+79e0c383766a0be7a5b858e8235c089f po/pl.gmo
+47dc46dab2f02f1be0bdb2bc55c45606 po/pt.gmo
+d9ec0cefa38c607d170da21c281ad91d po/sk.gmo

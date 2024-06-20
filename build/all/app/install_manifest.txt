@@ -1,0 +1,15 @@
+/./manifest.json
+//lock-message.apparmor
+//assets/lock-message.png
+//qml/Main.qml
+//qml/AboutPage.qml
+//lock-message.desktop
+/share/locale/cs/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/de/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/el/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/es/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/fr/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/hu/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/pl/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/pt/LC_MESSAGES/lock-message.pybodensee.mo
+/share/locale/sk/LC_MESSAGES/lock-message.pybodensee.mo
