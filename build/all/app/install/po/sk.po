@@ -1,0 +1,90 @@
+# Slovak translation for circle-message
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the circle-message package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: circle-message\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-07-10 20:36+0100\n"
+"PO-Revision-Date: 2015-04-19 16:05+0000\n"
+"Last-Translator: Stefanisin Radovan <stefanisin.radovan@gmail.com>\n"
+"Language-Team: Slovak <sk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-07-10 20:52+0000\n"
+"X-Generator: Launchpad (build 17620)\n"
+
+#: AboutPage.qml:7
+msgid "About Circle Message"
+msgstr "O Circle Message"
+
+#: AboutPage.qml:62
+msgid "Add your message to the lockscreen"
+msgstr "Vytvor si vlastnú správu na uzamknutú plochu"
+
+#: AboutPage.qml:72
+msgid "Author: "
+msgstr "Autor: "
+
+#: AboutPage.qml:82
+msgid "Project website: "
+msgstr "Webstránka projektu: "
+
+#: AboutPage.qml:92
+msgid "License: "
+msgstr "Licencia: "
+
+#: AboutPage.qml:102
+msgid "My other apps"
+msgstr ""
+
+#: Main.qml:17
+msgid "Nothing here but you can change it!"
+msgstr "Nič tu nie je, ale môžeš to zmeniť!"
+
+#: Main.qml:50
+msgid "Info"
+msgstr "Podrobnosti"
+
+#: Main.qml:108
+msgid "for this moment"
+msgstr "pre túto chvíľu"
+
+#: Main.qml:156
+msgid "for other days"
+msgstr "na ďalšie dni"
+
+#: Main.qml:249
+msgid "Touch to write"
+msgstr "Klikni pre písanie"
+
+#: Main.qml:279
+msgid "Circle message for this moment was updated"
+msgstr "Kruhová správa pre túto chvíľu bola aktualizovaná"
+
+#: Main.qml:282
+msgid "Circle message for other days was updated"
+msgstr "Kruhová správa na ďalšie dni bola aktualizovaná"
+
+#: Main.qml:308
+msgid "Circle message for this moment."
+msgstr "Kruhová správa pre túto chvíľu."
+
+#: Main.qml:309
+msgid "Should be visible on your lockscreen soon after you write it."
+msgstr "Mala by byť viditeľná hneď po úprave."
+
+#: Main.qml:312
+msgid "Circle message for other days."
+msgstr "Kruhová správa na ďalšie dni."
+
+#: Main.qml:313
+msgid ""
+"Will be visible on your lockscreen tomorrow and every day you don't set the "
+"message for this moment."
+msgstr ""
+"Bude viditeľná na uzamknutej obrazovke zajtra a ďalšie dni až pokiaľ "
+"nenastavíš kruhovú správu pre túto chvíľu."

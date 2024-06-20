@@ -1,0 +1,90 @@
+# Polish translation for circle-message
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the circle-message package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: circle-message\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-07-10 20:36+0100\n"
+"PO-Revision-Date: 2015-04-20 11:21+0000\n"
+"Last-Translator: Michal Predotka <mpredotka@gmail.com>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-07-10 20:52+0000\n"
+"X-Generator: Launchpad (build 17620)\n"
+
+#: AboutPage.qml:7
+msgid "About Circle Message"
+msgstr "O programie"
+
+#: AboutPage.qml:62
+msgid "Add your message to the lockscreen"
+msgstr "Dodaj swoją wiadomość do ekranu powitalnego"
+
+#: AboutPage.qml:72
+msgid "Author: "
+msgstr "Autor: "
+
+#: AboutPage.qml:82
+msgid "Project website: "
+msgstr "Strona projektu: "
+
+#: AboutPage.qml:92
+msgid "License: "
+msgstr "Licencja: "
+
+#: AboutPage.qml:102
+msgid "My other apps"
+msgstr ""
+
+#: Main.qml:17
+msgid "Nothing here but you can change it!"
+msgstr "Niczego tu jeszcze nie ma ale możesz to zmienić!"
+
+#: Main.qml:50
+msgid "Info"
+msgstr "Informacja"
+
+#: Main.qml:108
+msgid "for this moment"
+msgstr "na tę chwilę"
+
+#: Main.qml:156
+msgid "for other days"
+msgstr "na inne dni"
+
+#: Main.qml:249
+msgid "Touch to write"
+msgstr "Dotknij aby pisać"
+
+#: Main.qml:279
+msgid "Circle message for this moment was updated"
+msgstr "Wiadomość na tę chwilę została uaktualniona"
+
+#: Main.qml:282
+msgid "Circle message for other days was updated"
+msgstr "Wiadomość na inne dni została uaktualniona"
+
+#: Main.qml:308
+msgid "Circle message for this moment."
+msgstr "Wiadomość na tę chwilę."
+
+#: Main.qml:309
+msgid "Should be visible on your lockscreen soon after you write it."
+msgstr "Powinna być widoczna wkrótce po napisaniu."
+
+#: Main.qml:312
+msgid "Circle message for other days."
+msgstr "Wiadomość na inne dni."
+
+#: Main.qml:313
+msgid ""
+"Will be visible on your lockscreen tomorrow and every day you don't set the "
+"message for this moment."
+msgstr ""
+"Będzie widoczna na ekranie jutro oraz każdego dnia, kiedy nie napiszesz "
+"wiadomości na tę chwilę."

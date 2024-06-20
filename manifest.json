@@ -1,0 +1,15 @@
+{
+    "name": "circle-message.mivoligo",
+    "description": "Add your message to the lockscreen",
+    "architecture": "all",
+    "title": "Circle Message",
+    "hooks": {
+        "circle-message": {
+            "apparmor": "circle-message.apparmor",
+            "desktop": "circle-message.desktop"
+        }
+    },
+    "version": "0.4",
+    "maintainer": "Michal Predotka <mpredotka@gmail.com>",
+    "framework": "ubuntu-sdk-15.04"
+}
