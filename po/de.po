@@ -1,7 +1,6 @@
-# German translation for circle-message
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the circle-message package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# German translation for lock-message
+# This file is distributed under the same license as the lock-message package.
+# Faisal Shahzad <pybodensee@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
@@ -17,74 +16,66 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-07-10 20:52+0000\n"
 "X-Generator: Launchpad (build 17620)\n"
 
-#: AboutPage.qml:7
-msgid "About Circle Message"
-msgstr "Über Circle Message"
+#: ../qml/AboutPage.qml:10
+msgid "Information"
+msgstr "Über Lock Message"
 
-#: AboutPage.qml:62
+#: ../qml/AboutPage.qml:79
 msgid "Add your message to the lockscreen"
 msgstr "Fügen Sie Ihre Nachricht zum Sperrbildschirm hinzu"
 
-#: AboutPage.qml:72
-msgid "Author: "
-msgstr "Autor: "
+#: ../qml/AboutPage.qml:86
+msgid "Website"
+msgstr "Projektseite"
 
-#: AboutPage.qml:82
-msgid "Project website: "
-msgstr "Projektseite: "
+#: ../qml/AboutPage.qml:95
+msgid "License"
+msgstr "Lizenz"
 
-#: AboutPage.qml:92
-msgid "License: "
-msgstr "Lizenz: "
+#: ../qml/AboutPage.qml:104
+msgid "Author"
+msgstr "Autor"
 
-#: AboutPage.qml:102
-msgid "My other apps"
-msgstr ""
-
-#: Main.qml:17
-msgid "Nothing here but you can change it!"
-msgstr "Hier ist noch nichts, aber Sie können es ändern!"
-
-#: Main.qml:50
+#: ../qml/Main.qml:79
 msgid "Info"
 msgstr "Info"
 
-#: Main.qml:108
-msgid "for this moment"
-msgstr "für diesen Moment"
+#: ../qml/Main.qml:138
+msgid "Click to add locked sceen message"
+msgstr "Berühren Sie, um eine Sperr-Nachricht hinzuzufügen"
 
-#: Main.qml:156
-msgid "for other days"
-msgstr "für andere Tage"
+#: ../qml/Main.qml:157
+msgid ""
+"- If your custom message doesn't show up on the locked screen, then please "
+"restart your Phone after removing the SIM card."
+msgstr ""
+"- Wenn Ihre persönliche Sperr-Nachricht nicht auf dem gesperrten "
+"Bildschirm angezeigt wird, starten Sie bitte Ihr Telefon nach der Entfernung der SIM-Karte neu."
 
-#: Main.qml:249
+#: ../qml/Main.qml:158
+msgid ""
+"- Restarting without SIM card will reset the usermetric sequences and Lock "
+"Message sequence will be shown afterwards."
+msgstr ""
+"- Bei einem Neustart ohne SIM-Karte werden die usermetrischen Sequenzen zurückgesetzt "
+"und die Sequenz der Sperr-Nachricht wird anschließend angezeigt."
+
+#: ../qml/Main.qml:159
+msgid ""
+"- Please contact me with any issues before leaving negative review and I "
+"will try to fix them. Help me to improve this important feature."
+msgstr ""
+"- Bitte kontaktieren Sie mich bei allen Problemen, bevor Sie eine negative Bewertung hinterlassen, "
+"und ich werde mich bemühen, diese zu beheben. Helfen Sie mir, diese wichtige Funktion zu verbessern."
+
+#: ../qml/Main.qml:248
 msgid "Touch to write"
 msgstr "Berühren um zu schreiben"
 
-#: Main.qml:279
-msgid "Circle message for this moment was updated"
-msgstr "Kreisnachricht für diesen Moment wurde aktualisiert"
+#: ../qml/Main.qml:277
+msgid "Locked screen message was updated"
+msgstr "Sperr-Nachricht wurde aktualisiert"
 
-#: Main.qml:282
-msgid "Circle message for other days was updated"
-msgstr "Kreisnachricht für andere Tage wurde aktualisiert"
-
-#: Main.qml:308
-msgid "Circle message for this moment."
-msgstr "Kreisnachricht für diesen Moment"
-
-#: Main.qml:309
-msgid "Should be visible on your lockscreen soon after you write it."
-msgstr "Sollte nach Eingabe direkt auf dem Sperrbildschirm erscheinen."
-
-#: Main.qml:312
-msgid "Circle message for other days."
-msgstr "Kreisnachricht für andere Tage"
-
-#: Main.qml:313
-msgid ""
-"Will be visible on your lockscreen tomorrow and every day you don't set the "
-"message for this moment."
-msgstr ""
-"Wird auf dem Sperrbildschirm morgen und an jedem anderen Tag, an dem keine "
-"Nachricht für den Moment gesetzt ist, erscheinen."
+#: lock-message.desktop.in.h:1
+msgid "Lock Message"
+msgstr "Lock Message"
