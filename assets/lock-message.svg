@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="lock-message.svg"
+   inkscape:export-filename="/home/fshahzad/src/ut/lock-message/assets/lock-message.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="128px"
+     inkscape:zoom="4"
+     inkscape:cx="47.375"
+     inkscape:cy="82.125"
+     inkscape:window-width="1719"
+     inkscape:window-height="1406"
+     inkscape:window-x="3640"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g11928"
+       transform="matrix(0.50000003,0,0,0.49999997,-35.566672,-57.316662)">
+      <g
+         id="g11919">
+        <rect
+           style="fill:#7f2e76;fill-opacity:1;stroke:none;stroke-width:0.291726;stroke-linecap:round;stroke-linejoin:round"
+           id="rect858"
+           width="67.73333"
+           height="34.628345"
+           x="71.133339"
+           y="114.63333" />
+        <rect
+           style="fill:#7f2675;fill-opacity:0.854639;stroke:none;stroke-width:0.285238;stroke-linecap:round;stroke-linejoin:round"
+           id="rect858-3"
+           width="67.73333"
+           height="33.104996"
+           x="71.133339"
+           y="149.26167" />
+        <g
+           id="g11021">
+          <circle
+             style="fill:#ea5825;fill-opacity:1;stroke:none;stroke-width:0.450128;stroke-linecap:round;stroke-linejoin:round"
+             id="path962"
+             cx="105"
+             cy="148.5"
+             r="19.118591" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:16.2142px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#eb2121;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="98.133301"
+             y="153.57973"
+             id="text1376"><tspan
+               sodipodi:role="line"
+               id="tspan1374"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.2142px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;fill-opacity:1;stroke:#eb2121;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               x="98.133301"
+               y="153.57973">:-)</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
