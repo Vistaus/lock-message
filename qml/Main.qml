@@ -7,16 +7,12 @@ import Qt.labs.settings 1.0
 MainView {
     id: main_view
 
-    // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "lock-message.pybodensee"
-
 
     property bool isLandscape: a_p_layout.width > a_p_layout.height
     property bool isWide: a_p_layout.width > units.gu(80)
     property string momentMessage
-    property string daysMessage: i18n.tr("Nothing here but you can change it!")
     property bool isMomentEdit: false
-    property bool isDaysEdit: false
     property bool columnAdded: false
 
     width: units.gu(40)
@@ -24,16 +20,14 @@ MainView {
 
     Metric {
         id: metrics
-        name: "lockMessages" // Change it for your project
+        name: "lockMessages"
         format: momentMessage
-        emptyFormat: daysMessage
-        domain: "com.ubuntu.developer.lock-message.pybodensee" // Change it for your project
+        emptyFormat: momentMessage
+        domain: "com.ubuntu.developer.lock-message.pybodensee"
     }
 
     Settings {
         id: settings
-
-        property alias daysmessage: main_view.daysMessage
         property alias momentmessage: main_view.momentMessage
     }
 
@@ -42,7 +36,6 @@ MainView {
 
         anchors.fill: parent
         primaryPage: main_page
-
 
         layouts: [
             // configure two columns
@@ -111,7 +104,7 @@ MainView {
                     id: moment_root
 
                     width: parent.width
-                    height: parent.height/2
+                    height: parent.height*0.65
 
                     Rectangle {
                         id: moment_circle
@@ -142,7 +135,7 @@ MainView {
                     Label {
                         id: moment_label
 
-                        text: i18n.tr("for this moment")
+                        text: i18n.tr("Click to add locked sceen message")
                         anchors {
                             horizontalCenter: parent.horizontalCenter
                             top: moment_circle.bottom
@@ -152,54 +145,34 @@ MainView {
                 }
 
                 Item {
-                    id: days_root
+                    id: moment_messages
 
                     width: parent.width
-                    height: parent.height/2
-                    y: moment_root.height
-
-                    Rectangle {
-                        id: days_circle
-
-                        color: UbuntuColors.orange
-                        x: (parent.width - width)/2
-                        y: height
-                        width: main_page.circleStartWidth
-                        height: width
-                        radius: width/2
-
-                        AbstractButton {
-                            id: add_day_icon
-
-                            width: units.gu(3)
-                            height: width
-                            anchors.centerIn: parent
-                            onClicked: anim_to_days.start()
-
-                            Icon {
-                                name: "add"
-                                color: UbuntuColors.porcelain
-                                anchors.fill: parent
-                            }
-                        }
-                    }
+                    height: parent.height*0.35
 
                     Label {
-                        id: days_label
+                        id: message_description
 
-                        text: i18n.tr("for other days")
-                        anchors {
-                            horizontalCenter: parent.horizontalCenter
-                            top: days_circle.bottom
-                            topMargin: units.gu(2)
+                        text: {
+                            i18n.tr("- If your custom message doesn't show up on the locked screen, then please restart your Phone after removing the SIM card.") + "\n\n" +
+                            i18n.tr("- Restarting without SIM card will reset the usermetric sequences and Lock Message sequence will be shown afterwards.") + "\n\n" +
+                            i18n.tr("- Please contact me with any issues before leaving negative review and I will try to fix them. Help me to improve this important feature.")
+
                         }
+                        width: parent.width
+                        anchors {
+                            top: parent.bottom
+                            topMargin: units.gu(10)
+                        }
+                        wrapMode: TextEdit.WordWrap
+                        horizontalAlignment: Text.AlignLeft
                     }
                 }
 
                 AbstractButton {
                     id: go_back
 
-                    enabled: isMomentEdit || isDaysEdit
+                    enabled: isMomentEdit
                     opacity: enabled ? 1 : 0
                     width: units.gu(3)
                     height: width
@@ -216,9 +189,6 @@ MainView {
                         if(isMomentEdit){
                             anim_from_moment.start()
                         }
-                        else if(isDaysEdit){
-                            anim_from_days.start()
-                        }
                         confirmation.enabled = false
                     }
                     Behavior on opacity { NumberAnimation{}}
@@ -227,7 +197,7 @@ MainView {
                 AbstractButton {
                     id: accept
 
-                    enabled: (isMomentEdit || isDaysEdit) && moment_text_field.text.length > 0
+                    enabled: isMomentEdit && moment_text_field.text.length > 0
                     opacity: enabled ? 1 : 0
                     width: units.gu(3)
                     height: width
@@ -248,9 +218,6 @@ MainView {
                             metrics.update(0)
 
                         }
-                        else if(isDaysEdit){
-                            daysMessage = moment_text_field.text
-                        }
                         confirmation.enabled = true
                     }
 
@@ -268,7 +235,7 @@ MainView {
                     height: width
 
                     MouseArea {
-                        enabled: isMomentEdit || isDaysEdit
+                        enabled: isMomentEdit
                         anchors.fill: parent
                         anchors.margins: units.gu(3)
                         onClicked: {moment_text_field.focus = true}
@@ -286,7 +253,7 @@ MainView {
                     TextEdit {
                         id: moment_text_field
 
-                        enabled: isMomentEdit || isDaysEdit
+                        enabled: isMomentEdit
                         visible: enabled
                         color: UbuntuColors.porcelain
                         anchors.centerIn: parent
@@ -307,10 +274,7 @@ MainView {
 
                     text: {
                         if(isMomentEdit){
-                            i18n.tr("Circle message for this moment was updated")
-                        }
-                        else if(isDaysEdit){
-                            i18n.tr("Circle message for other days was updated")
+                            i18n.tr("Locked screen message was updated")
                         }
                         else {
                             ""
@@ -327,36 +291,6 @@ MainView {
                     horizontalAlignment: Text.AlignHCenter
                     Behavior on opacity { NumberAnimation {duration: 333}}
                 }
-
-                Label {
-                    id: message_description
-
-                    enabled: isMomentEdit || isDaysEdit
-                    opacity: enabled ? 1 : 0
-
-                    text: {
-                        if(isMomentEdit){
-                            i18n.tr("Circle message for this moment.") + "\n"+
-                                    i18n.tr("Should be visible on your lockscreen soon after you write it.")
-                        }
-                        else if(isDaysEdit){
-                            i18n.tr("Circle message for other days.") +"\n"+
-                                    i18n.tr("Will be visible on your lockscreen tomorrow and every day you don't set the message for this moment.")
-                        }
-                        else {
-                            ""
-                        }
-                    }
-                    width: parent.width
-                    anchors {
-                        bottom: parent.bottom
-                        bottomMargin: units.gu(4)
-                        horizontalCenter: parent.horizontalCenter
-                    }
-                    wrapMode: TextEdit.WordWrap
-                    horizontalAlignment: Text.AlignHCenter
-                    Behavior on opacity { NumberAnimation {duration: 333}}
-                }
             }
         }
 
@@ -367,8 +301,6 @@ MainView {
         SequentialAnimation {
             id: anim_to_moment
 
-            NumberAnimation { target: days_label; property: "opacity"; to: 0; duration: 165 }
-            NumberAnimation { target: days_circle; property: "scale"; to: 0; duration: 165 }
             NumberAnimation { target: moment_label; property: "opacity"; to: 0; duration: 165 }
             NumberAnimation { target: add_moment_icon; property: "opacity"; to: 0; duration: 165 }
             NumberAnimation { target: moment_circle; property: "y"; to: moment_circle.height * 1.5 + units.gu(2); duration: 333 }
@@ -389,41 +321,7 @@ MainView {
             NumberAnimation { target: moment_circle; property: "y"; to: moment_circle.height; duration: 333 }
             NumberAnimation { target: moment_label; property: "opacity"; to: 1; duration: 165 }
             NumberAnimation { target: add_moment_icon; property: "opacity"; to: 1; duration: 165 }
-            NumberAnimation { target: days_circle; property: "scale"; to: 1; duration: 165 }
-            NumberAnimation { target: days_label; property: "opacity"; to: 1; duration: 165 }
         }
-
-        SequentialAnimation {
-            id: anim_to_days
-
-            NumberAnimation { target: moment_label; property: "opacity"; to: 0; duration: 165}
-            NumberAnimation { target: moment_circle; property: "scale"; to: 0; duration: 165}
-            NumberAnimation { target: days_label; property: "opacity"; to: 0; duration: 165 }
-            NumberAnimation { target: add_day_icon; property: "opacity"; to: 0; duration: 165 }
-            PropertyAnimation { target: days_root; property: "y"; to: 0}
-            NumberAnimation { target: days_circle; property: "y"; to: days_circle.height * 1.5 + units.gu(2); duration: 333 }
-            NumberAnimation { target: days_circle; property: "scale"; to: 4; duration: 333 }
-            PropertyAction { target: main_view; property: "isDaysEdit"; value: "true"}
-            PropertyAction { target: moment_hint_text; property: "visible"; value: "true"}
-            PauseAnimation {duration: 666}
-            PropertyAction { target: moment_hint_text; property: "visible"; value: "false"}
-            PropertyAction { target: moment_text_field; property: "text"; value: daysMessage}
-        }
-
-        SequentialAnimation {
-            id: anim_from_days
-
-            PropertyAction { target: moment_text_field; property: "text"; value: ""}
-            PropertyAction { target: main_view; property: "isDaysEdit"; value: "false"}
-            NumberAnimation { target: days_circle; property: "scale"; to: 1; duration: 333 }
-            NumberAnimation { target: days_circle; property: "y"; to: days_circle.height; duration: 333 }
-            PropertyAnimation { target: days_root; property: "y"; to: moment_root.height }
-            NumberAnimation { target: days_label; property: "opacity"; to: 1; duration: 165}
-            NumberAnimation { target: add_day_icon; property: "opacity"; to: 1; duration: 165 }
-            NumberAnimation { target: moment_circle; property: "scale"; to: 1; duration: 165}
-            NumberAnimation { target: moment_label; property: "opacity"; to: 1; duration: 165}
-        }
-
     }
 }
 
