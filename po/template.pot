@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lock-message.pybodensee\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-20 12:35+0000\n"
+"POT-Creation-Date: 2024-06-21 09:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,50 +37,38 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: ../qml/Main.qml:17
-msgid "Nothing here but you can change it!"
-msgstr ""
-
-#: ../qml/Main.qml:86
+#: ../qml/Main.qml:79
 msgid "Info"
 msgstr ""
 
-#: ../qml/Main.qml:145
-msgid "for this moment"
+#: ../qml/Main.qml:138
+msgid "Click to add locked sceen message"
 msgstr ""
 
-#: ../qml/Main.qml:190
-msgid "for other days"
+#: ../qml/Main.qml:157
+msgid ""
+"- If your custom message doesn't show up on the locked screen, then please "
+"restart your Phone after removing the SIM card."
 msgstr ""
 
-#: ../qml/Main.qml:281
+#: ../qml/Main.qml:158
+msgid ""
+"- Restarting without SIM card will reset the usermetric sequences and Lock "
+"Message sequence will be shown afterwards."
+msgstr ""
+
+#: ../qml/Main.qml:159
+msgid ""
+"- Please contact me with any issues before leaving negative review and I "
+"will try to fix them. Help me to improve this important feature."
+msgstr ""
+
+#: ../qml/Main.qml:248
 msgid "Touch to write"
 msgstr ""
 
-#: ../qml/Main.qml:310
-msgid "Circle message for this moment was updated"
-msgstr ""
-
-#: ../qml/Main.qml:313
-msgid "Circle message for other days was updated"
-msgstr ""
-
-#: ../qml/Main.qml:339
-msgid "Circle message for this moment."
-msgstr ""
-
-#: ../qml/Main.qml:340
-msgid "Should be visible on your lockscreen soon after you write it."
-msgstr ""
-
-#: ../qml/Main.qml:343
-msgid "Circle message for other days."
-msgstr ""
-
-#: ../qml/Main.qml:344
-msgid ""
-"Will be visible on your lockscreen tomorrow and every day you don't set the "
-"message for this moment."
+#: ../qml/Main.qml:277
+msgid "Locked screen message was updated"
 msgstr ""
 
 #: lock-message.desktop.in.h:1
