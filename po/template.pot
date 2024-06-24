@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lock-message.pybodensee\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-21 10:27+0000\n"
+"POT-Creation-Date: 2024-06-24 21:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Information"
 msgstr ""
 
 #: ../qml/AboutPage.qml:79
-msgid "Add your message to the lockscreen"
+msgid "Add a message to the lockscreen"
 msgstr ""
 
 #: ../qml/AboutPage.qml:86
@@ -37,37 +37,43 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: ../qml/Main.qml:79
+#: ../qml/Main.qml:80
 msgid "Info"
 msgstr ""
 
-#: ../qml/Main.qml:138
+#: ../qml/Main.qml:139
 msgid "Click to add locked sceen message"
-msgstr ""
-
-#: ../qml/Main.qml:157
-msgid ""
-"- If your custom message doesn't show up on the locked screen, then please "
-"restart your Phone after removing the SIM card."
 msgstr ""
 
 #: ../qml/Main.qml:158
 msgid ""
-"- Restarting without SIM card will reset the usermetric sequences and Lock "
-"Message sequence will be shown afterwards."
+"- If your custom message doesn't show up on the locked screen, then its "
+"probably hidden in usermetrics queu."
 msgstr ""
 
 #: ../qml/Main.qml:159
+msgid ""
+"- You can double tap on text inside the circle untill you see your lock "
+"message."
+msgstr ""
+
+#: ../qml/Main.qml:160
+msgid ""
+"- While double tapping, please only tap on the text inside the lock screen "
+"circle, as double tap on random area might not work."
+msgstr ""
+
+#: ../qml/Main.qml:161
 msgid ""
 "- Please contact me with any issues before leaving negative review and I "
 "will try to fix them. Help me to improve this important feature."
 msgstr ""
 
-#: ../qml/Main.qml:248
+#: ../qml/Main.qml:250
 msgid "Touch to write"
 msgstr ""
 
-#: ../qml/Main.qml:277
+#: ../qml/Main.qml:279
 msgid "Locked screen message was updated"
 msgstr ""
 

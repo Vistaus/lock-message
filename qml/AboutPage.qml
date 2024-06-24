@@ -66,7 +66,7 @@ Page {
             Label {
                 id: name
 
-                text: "Lock Message\nv0.1.0"
+                text: "Lock Message\n" + version
                 anchors.horizontalCenter: parent.horizontalCenter
                 textSize: Label.Large
                 horizontalAlignment:  Text.AlignHCenter
@@ -76,7 +76,7 @@ Page {
                 id: description_text
 
                 width: parent.width - units.gu(4)
-                text: i18n.tr("Add your message to the lockscreen")
+                text: i18n.tr("Add a message to the lockscreen")
                 anchors.horizontalCenter: parent.horizontalCenter
                 wrapMode: Text.WordWrap
                 horizontalAlignment:  Text.AlignHCenter

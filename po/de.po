@@ -46,33 +46,40 @@ msgstr "Berühren Sie, um eine Sperr-Nachricht hinzuzufügen"
 
 #: ../qml/Main.qml:157
 msgid ""
-"- If your custom message doesn't show up on the locked screen, then please "
-"restart your Phone after removing the SIM card."
+"- If your custom message doesn't show up on the locked screen, then its "
+"probably hidden in usermetrics queu."
 msgstr ""
-"- Wenn Ihre persönliche Sperr-Nachricht nicht auf dem gesperrten "
-"Bildschirm angezeigt wird, starten Sie bitte Ihr Telefon nach der Entfernung der SIM-Karte neu."
+"- Wenn Ihre Sperr-Nachricht nicht auf dem gesperrten Bildschirm angezeigt wird, "
+"dann ist sie wahrscheinlich in der Warteschlange von Usermetrics versteckt."
 
 #: ../qml/Main.qml:158
 msgid ""
-"- Restarting without SIM card will reset the usermetric sequences and Lock "
-"Message sequence will be shown afterwards."
+"- You can double tap on text inside the circle untill you see your lock "
+"message."
 msgstr ""
-"- Bei einem Neustart ohne SIM-Karte werden die usermetrischen Sequenzen zurückgesetzt "
-"und die Sequenz der Sperr-Nachricht wird anschließend angezeigt."
+"- Tippen Sie doppelt auf den Text innerhalb des Kreises, bis Sie Ihre Sperrnachricht sehen."
 
 #: ../qml/Main.qml:159
+msgid ""
+"- While double tapping, please only tap on the text inside the lock screen "
+"circle, as double tap on random area might not work."
+msgstr ""
+"- Beim Doppeltippen bitte nur auf den Text innerhalb des Kreises auf dem Sperrbildschirm tippen, "
+"da das Doppeltippen auf zufällige Bereiche möglicherweise nicht funktioniert."
+
+#: ../qml/Main.qml:160
 msgid ""
 "- Please contact me with any issues before leaving negative review and I "
 "will try to fix them. Help me to improve this important feature."
 msgstr ""
-"- Bitte kontaktieren Sie mich bei allen Problemen, bevor Sie eine negative Bewertung hinterlassen, "
+"- Bitte kontaktieren Sie mich bei allen Problemen, bevor Sie eine negative Bewertung hinterlassen "
 "und ich werde mich bemühen, diese zu beheben. Helfen Sie mir, diese wichtige Funktion zu verbessern."
 
-#: ../qml/Main.qml:248
+#: ../qml/Main.qml:249
 msgid "Touch to write"
 msgstr "Berühren um zu schreiben"
 
-#: ../qml/Main.qml:277
+#: ../qml/Main.qml:278
 msgid "Locked screen message was updated"
 msgstr "Sperr-Nachricht wurde aktualisiert"
 

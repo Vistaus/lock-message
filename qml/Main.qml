@@ -8,7 +8,8 @@ MainView {
     id: main_view
 
     applicationName: "lock-message.pybodensee"
-
+    
+    property string version : "v0.1.1"
     property bool isLandscape: a_p_layout.width > a_p_layout.height
     property bool isWide: a_p_layout.width > units.gu(80)
     property string momentMessage
@@ -154,8 +155,9 @@ MainView {
                         id: message_description
 
                         text: {
-                            i18n.tr("- If your custom message doesn't show up on the locked screen, then please restart your Phone after removing the SIM card.") + "\n\n" +
-                            i18n.tr("- Restarting without SIM card will reset the usermetric sequences and Lock Message sequence will be shown afterwards.") + "\n\n" +
+                            i18n.tr("- If your custom message doesn't show up on the locked screen, then its probably hidden in usermetrics queu.") + "\n\n" +
+                            i18n.tr("- You can double tap on text inside the circle untill you see your lock message.") + "\n\n" +
+                            i18n.tr("- While double tapping, please only tap on the text inside the lock screen circle, as double tap on random area might not work.") + "\n\n" +
                             i18n.tr("- Please contact me with any issues before leaving negative review and I will try to fix them. Help me to improve this important feature.")
 
                         }

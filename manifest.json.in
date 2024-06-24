@@ -9,7 +9,7 @@
             "desktop":  "lock-message.desktop"
         }
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "maintainer": "Faisal Shahzad <pybodensee@gmail.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
