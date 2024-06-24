@@ -10,13 +10,14 @@ We have heavly edited the original version and modified GUI interface. See `git 
 
 ## How to Use?
 
-Install the app from the App Store by following the download link. You will see a circular button with a `+` button in it. Click on it and then add your custom lock message. as shown in the images below. 
+Install the app from the App Store by following the download link. You will see a circular button with a `+` button in it. Click on it and then add your custom lock message as shown in the images below. 
 
 Then click on the green color tick button to add the text. Your custom lock message will be added to the lock screen.
 
-Now check the lock screen of your Ubuntu Phone. You should see your custom lock message there. If you do not see it there, then there may be a display conflict with other user metrics.
+Now check the lock screen of your Ubuntu Phone. You should see your custom lock message there. If you do not see it there, then it is probably hidden in usermetrics queu. 
 
-To clear the other metrics, please restart your mobile phone to clear those metrics. After restart, you should see the custom message on the lock screen circle.
+You can click anywhere on the text inside the circle to toggle the messages untill your locked message is shown up.
+
 
 ## Tests
 
@@ -25,20 +26,6 @@ To clear the other metrics, please restart your mobile phone to clear those metr
 This app helps you write a message that will appear inside Circle on the lock screen. This feature can be useful as you can add custom messages to your UT lock screens.
 
 ![Lock Message Running on Xiaomi Redmi Pro 9 with Ubunut Touch/Liomiri ](assets/composit.png)
-
-## Trouble Shootings
-
-**Question 1: Custom Lock Message is not showing  up on the lcok screen/circl?**
-
-Answer: If your custom message doesn't show up on the locked screen, then please restart your Phone after removing the SIM card.
-
-**Question 2: What happens if you restart Ubunut Touch without SIM Card?**
-
-Answer: Restarting without SIM card will reset the usermetric sequences and Lock Message sequence will be shown afterwards.
-
-**Question 3: Have you noticed unexpected behaviour?**
-
-Please contact me with any issues before leaving negative review and I will try to fix them. Help me to improve this important feature.
 
 
 ## Use Cases
@@ -52,6 +39,11 @@ Some use cases where this can be useful.
 - You can add a custom message for someone who will have custody of your phone e.g. when you are leaving home or if you have temporarily changed the passcode for someone else to log in to your phone.
 
 - ...
+
+## Contact
+
+Please contact me with any issues before leaving negative review and I will try to fix them. Help me to improve this important feature.
+
 
 ## License
 This app is a fork of `Circle Message` created by Michał Prędotka and is available under BSD License. We have kept that old license intact. 
